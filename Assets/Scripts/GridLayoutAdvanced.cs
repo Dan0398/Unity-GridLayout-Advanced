@@ -49,7 +49,6 @@ namespace UnityEngine.UI
         
         void ReplaceCells()
         {
-            Debug.Log("Rebuilded");
             FixUserInput();
             TryDetectDirectionChange();
             if (direction == BasicDirection.Vertical)

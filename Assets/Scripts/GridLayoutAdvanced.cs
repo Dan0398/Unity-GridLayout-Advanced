@@ -76,19 +76,14 @@ namespace UnityEngine.UI
             {
                 rectTransform.anchorMin = Vector2.up;
                 rectTransform.anchorMax = Vector2.one;
-                rectTransform.anchoredPosition = Vector2.right * rectTransform.anchoredPosition.x;
-                UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(rectTransform);
-                rectTransform.offsetMax = Vector2.up * rectTransform.offsetMax.y;
             }
             else 
             {
                 rectTransform.anchorMin = Vector2.zero;
                 rectTransform.anchorMax = Vector2.up;
-                rectTransform.anchoredPosition = Vector2.up * rectTransform.anchoredPosition.y;
-                UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(rectTransform);
-                rectTransform.offsetMin = Vector2.right * rectTransform.offsetMin.x;
             }
-            rectTransform.anchoredPosition = Vector2.zero;
+            rectTransform.offsetMax = Vector2.zero;
+            rectTransform.offsetMin = Vector2.zero;
         }
         
         void ReplaceCellsHorizontal()

@@ -154,6 +154,7 @@ namespace UnityEngine.UI
                     Multiplier = 0.5f;
                 }
                 int EmptyCells = fixedCellsPerLine - (rectChildren.Count % fixedCellsPerLine);
+                if (EmptyCells == fixedCellsPerLine) return 0;
                 float EmptySpace = referenceRectSize * (EmptyCells / (float) fixedCellsPerLine) + fixedSpacing * EmptyCells;
                 return EmptySpace * Multiplier;
             }
@@ -227,6 +228,7 @@ namespace UnityEngine.UI
                     Multiplier = 0.5f;
                 }
                 int EmptyCells = fixedCellsPerLine - (rectChildren.Count % fixedCellsPerLine);
+                if (EmptyCells == fixedCellsPerLine) return 0;
                 float EmptySpace = referenceRectSize * (EmptyCells / (float) fixedCellsPerLine) + fixedSpacing * EmptyCells;
                 return EmptySpace * Multiplier;
             }

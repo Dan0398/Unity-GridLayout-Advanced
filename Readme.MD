@@ -20,5 +20,5 @@ Just download [this file](/Assets/Scripts/GridLayoutAdvanced.cs) and drop to you
 This component is developed for using in basic ScollView template (Hierarchy window > "+" > UI > ScrollView). In this case you need to add this component to "Content" object. Or just download whole project and open test scene where all prepared.
 
 ## Requirements
--This component is developed in 2020.3.37f1 LTS, but i think that it must work on Unity 2017 and younger.
--UnityUI package.
+- This component is developed in 2020.3.37f1 LTS, but i think that it must work on Unity 2017 and younger.
+- UnityUI package.
